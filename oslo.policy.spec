@@ -4,7 +4,7 @@
 #
 Name     : oslo.policy
 Version  : 0.11.0
-Release  : 11
+Release  : 12
 URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-0.11.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-0.11.0.tar.gz
 Summary  : Oslo Policy library
@@ -22,6 +22,7 @@ BuildRequires : docutils
 BuildRequires : extras
 BuildRequires : fixtures
 BuildRequires : flake8
+BuildRequires : funcsigs
 BuildRequires : hacking
 BuildRequires : iso8601
 BuildRequires : linecache2

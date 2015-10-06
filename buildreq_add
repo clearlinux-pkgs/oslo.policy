@@ -38,3 +38,4 @@ unittest2
 python-mimeparse
 extras
 linecache2
+funcsigs
