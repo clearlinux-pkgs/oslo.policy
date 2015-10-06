@@ -4,7 +4,7 @@
 #
 Name     : oslo.policy
 Version  : 0.11.0
-Release  : 10
+Release  : 11
 URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-0.11.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-0.11.0.tar.gz
 Summary  : Oslo Policy library
