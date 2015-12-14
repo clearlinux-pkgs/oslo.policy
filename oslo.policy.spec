@@ -4,7 +4,7 @@
 #
 Name     : oslo.policy
 Version  : 1.1.0
-Release  : 15
+Release  : 16
 URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-1.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-1.1.0.tar.gz
 Summary  : Oslo Policy library
@@ -51,7 +51,7 @@ BuildRequires : python-subunit
 BuildRequires : python3-dev
 BuildRequires : pytz
 BuildRequires : requests
-BuildRequires : requests_mock.contrib-python
+BuildRequires : requests-mock
 BuildRequires : setuptools
 BuildRequires : six
 BuildRequires : stevedore

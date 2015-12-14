@@ -39,3 +39,4 @@ python-mimeparse
 extras
 linecache2
 funcsigs
+requests-mock
