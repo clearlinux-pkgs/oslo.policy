@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+1.2.0
+-----
+
+* Updated from global requirements
+* Pass environment variables of proxy to tox
+* Fixes combined "and" and "or" rule handling
+* Make sure item of policy_dirs is directory
+* Updated from global requirements
+* Use dict comprehension
+* Don't generate doc from test
+
 1.1.0
 -----
 
