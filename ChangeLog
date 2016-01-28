@@ -1,10 +1,18 @@
 CHANGES
 =======
 
+1.3.0
+-----
+
+* Updated from global requirements
+* Don't crash on RoleCheck when roles not present
+* assertIsNone(val) instead of assertEqual(None,val)
+
 1.2.0
 -----
 
 * Updated from global requirements
+* Add string format rendering to RoleCheck.__call__()
 * Pass environment variables of proxy to tox
 * Fixes combined "and" and "or" rule handling
 * Make sure item of policy_dirs is directory
