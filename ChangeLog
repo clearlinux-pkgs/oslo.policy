@@ -1,11 +1,48 @@
 CHANGES
 =======
 
-1.6.0
+1.11.0
+------
+
+* Updated from global requirements
+
+1.10.0
+------
+
+* Imported Translations from Zanata
+* Improve policy sample generation testing
+* Add helper scripts for generating policy info
+
+1.9.0
+-----
+
+* Add sample file generation script and helper methods
+* Add equality operator to policy.RuleDefault
+* Imported Translations from Zanata
+* Updated from global requirements
+* Fix typo: 'olso' to 'oslo'
+* Updated from global requirements
+* Updated from global requirements
+* Add reno for release notes management
+* Add policy registration and authorize method
+* Updated from global requirements
+* doc: Fix wrong import statement in usage
+
+1.8.0
+-----
+
+* Trivial: ignore openstack/common in flake8 exclude list
+
+1.7.0
 -----
 
 * Updated from global requirements
-* Update .gitreview for stable/mitaka
+* Imported Translations from Zanata
+* Imported Translations from Zanata
+* Updated from global requirements
+* Updated from global requirements
+* Deprecate load_json() in favor of load()
+* Support policy file in YAML
 
 1.5.0
 -----
