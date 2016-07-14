@@ -1,5 +1,5 @@
 PKG_NAME := oslo.policy
-URL := http://tarballs.openstack.org/oslo.policy/oslo.policy-1.11.0.tar.gz
+URL := http://tarballs.openstack.org/oslo.policy/oslo.policy-1.12.0.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
