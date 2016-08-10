@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+1.13.0
+------
+
+* Updated from global requirements
+* Add note about not all APIs support policy enforcement by user_id
+* Adds debug logging for policy file validation
+* Fixed unit tests running on Windows
+* Add Python 3.5 classifier and venv
+
 1.12.0
 ------
 
