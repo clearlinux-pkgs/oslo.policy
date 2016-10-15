@@ -1,11 +1,33 @@
 CHANGES
 =======
 
+1.15.0
+------
+
+* Updated from global requirements
+* Update docs on policy sample generator
+* Updated from global requirements
+* doc: Add introduction to index page
+* Add sphinx extension to build sample policy
+* Updated from global requirements
+* Updated from global requirements
+* Doc: declare YAML/JSON support
+* Remove oslo.utils from requirements
+* Update reno for stable/newton
+
+1.14.0
+------
+
+* Revert "Adds debug logging for policy file validation"
+* Updated from global requirements
+* Delete H803 in flake8 ignore
+
 1.13.0
 ------
 
 * Updated from global requirements
 * Add note about not all APIs support policy enforcement by user_id
+* Allow policy file to not exist
 * Adds debug logging for policy file validation
 * Fixed unit tests running on Windows
 * Add Python 3.5 classifier and venv
