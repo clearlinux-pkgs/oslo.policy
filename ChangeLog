@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+1.16.0
+------
+
+* Change assertTrue(isinstance()) by optimal assert
+* Perform basic checks on policy definitions
+* Enable release notes translation
+* Changed the home-page link
+* Change assertTrue(isinstance()) by optimal assert
+
 1.15.0
 ------
 
