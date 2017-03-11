@@ -6,7 +6,7 @@
 #
 Name     : oslo.policy
 Version  : 1.16.0
-Release  : 34
+Release  : 35
 URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-1.16.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-1.16.0.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.policy/oslo.policy-1.16.0.tar.gz.asc
@@ -21,39 +21,11 @@ Requires: oslo.i18n
 Requires: oslo.serialization
 Requires: requests
 Requires: six
-BuildRequires : Jinja2
-BuildRequires : Pygments
-BuildRequires : Sphinx-python
-BuildRequires : configparser-python
-BuildRequires : coverage-python
-BuildRequires : docutils-python
-BuildRequires : flake8-python
-BuildRequires : hacking
-BuildRequires : iso8601-python
-BuildRequires : mccabe-python
-BuildRequires : msgpack-python-python
-BuildRequires : netaddr
-BuildRequires : netifaces-python
-BuildRequires : oslo.config
-BuildRequires : oslo.serialization-python
-BuildRequires : oslo.utils-python
-BuildRequires : oslosphinx-python
-BuildRequires : oslotest-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : pluggy
-BuildRequires : py-python
-BuildRequires : pytest
 BuildRequires : python-dev
-BuildRequires : python-mock-python
 BuildRequires : python3-dev
-BuildRequires : requests-mock-python
-BuildRequires : requests-python
 BuildRequires : setuptools
-BuildRequires : six
-BuildRequires : six-python
-BuildRequires : tox
-BuildRequires : virtualenv
 
 %description
 =============
@@ -84,17 +56,12 @@ python components for the oslo.policy package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1489033258
+export SOURCE_DATE_EPOCH=1489273449
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
-%check
-export http_proxy=http://127.0.0.1:9/
-export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost,127.0.0.1,0.0.0.0
-PYTHONPATH=%{buildroot}/usr/lib/python2.7/site-packages python2 setup.py test || :
 %install
-export SOURCE_DATE_EPOCH=1489033258
+export SOURCE_DATE_EPOCH=1489273449
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
