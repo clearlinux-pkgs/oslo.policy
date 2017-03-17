@@ -1,6 +1,48 @@
 CHANGES
 =======
 
+1.20.0
+------
+
+* Allow multiline descriptions for RuleDefaults
+
+1.19.0
+------
+
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Updated from global requirements
+* Updated from global requirements
+* Remove support for py34
+* pbr.version.VersionInfo needs package name (oslo.xyz and not oslo_xyz)
+* Delete the unnecessary word in policy.py
+* Update reno for stable/ocata
+* Add optional exception for check_rules
+
+1.18.0
+------
+
+* Remove references to Python 3.4
+* Remove dead code and use default value of argparse
+* Add Constraints support
+* Updated from global requirements
+
+1.17.0
+------
+
+* Improved performance of parse_file_contents() method
+* Show team and repo badges on README
+* Remove wrong parameter type for class NotCheck from docstring
+* Fix a code logic while doing cyclical reference check to the policy
+* Updated from global requirements
+* Add missing parameter description in module _cache_handler
+* Fix typo in oslo.policy
+* Updated from global requirements
+* Add stevedore to requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Make exception PolicyNotAuthorized more readable
+
 1.16.0
 ------
 
