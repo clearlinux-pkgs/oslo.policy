@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+1.22.0
+------
+
+* Update usage documentation
+* oslopolicy-sample-generator description support
+* Use Sphinx 1.5 warning-is-error
+
+1.21.0
+------
+
+* Comment out the rule from generated sample-policy file
+* Modify tests in test_generator
+* Add additional param to policy.RuleDefault
+* Updated from global requirements
+* Seperate each policy rule with new line
+
 1.20.0
 ------
 
