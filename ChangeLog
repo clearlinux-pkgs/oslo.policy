@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+1.39.1
+------
+
+* Docs: Remove references to JSON format
+* add lib-forward-testing-python3 test job
+* Imported Translations from Zanata
+* add python 3.6 unit test job
+* Move \_capture\_stdout to a common place
+* Remove PyPI downloads
+* import zuul job settings from project-config
+* Update reno for stable/rocky
+
 1.38.1
 ------
 
@@ -13,6 +25,7 @@ CHANGES
 * Pass dictionary as creds in policy tests
 * Fix requirements and convert to stestr
 * Add blueprints and releasenotes link to README
+* generator: Reimplement wrapping of 'description'
 * fix tox python3 overrides
 
 1.37.0
