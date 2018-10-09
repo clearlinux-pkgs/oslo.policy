@@ -1,9 +1,14 @@
 CHANGES
 =======
 
+1.40.0
+------
+
+
 1.39.1
 ------
 
+* sphinxext: Start parsing 'DocumentedRuleDefault.description' as rST
 * Docs: Remove references to JSON format
 * add lib-forward-testing-python3 test job
 * Imported Translations from Zanata
