@@ -1,9 +1,18 @@
 CHANGES
 =======
 
+1.40.1
+------
+
+* Update sphinx extension logging
+* Add minor nits in testing documentation
+* Clean up .gitignore references to personal tools
+* Add guidelines for naming policies
+
 1.40.0
 ------
 
+* Add docs for developers testing APIs
 
 1.39.1
 ------
