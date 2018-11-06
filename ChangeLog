@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+1.41.0
+------
+
+* Add ability to pass in target data for the oslopolicy-checker
+* Pass in policy name as part of the oslopolicy-check check call
+* Unit test for CLI
+
 1.40.1
 ------
 
