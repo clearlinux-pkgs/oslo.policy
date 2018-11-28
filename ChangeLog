@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+1.41.1
+------
+
+* Fix usage of token fixture in shell tests
+
 1.41.0
 ------
 
