@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+1.42.0
+------
+
+* oslopolicy-checker: iterate through rules in sorted order
+* Enhance test to prevent JSON parsing regression
+* Correct typo in docs
+
 1.41.1
 ------
 
