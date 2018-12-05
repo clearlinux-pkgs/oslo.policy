@@ -1,9 +1,16 @@
 CHANGES
 =======
 
+1.43.0
+------
+
+
 1.42.0
 ------
 
+* Fully log RBAC enforcement data
+* Add domain scope support for scope types
+* Make upgrades more robust with policy overrides
 * oslopolicy-checker: iterate through rules in sorted order
 * Enhance test to prevent JSON parsing regression
 * Correct typo in docs
