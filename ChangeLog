@@ -1,9 +1,15 @@
 CHANGES
 =======
 
+1.43.1
+------
+
+* Prevent sensitive target data from being logged
+
 1.43.0
 ------
 
+* Change openstack-dev to openstack-discuss
 
 1.42.0
 ------
