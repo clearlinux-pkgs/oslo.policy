@@ -1,10 +1,15 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+
 1.44.1
 ------
 
 * Fix sample config value when set\_defaults is used
+* Fixes is\_admin type from StrOpt to BoolOpt
 * Fixes file access using with statements
 
 1.44.0
