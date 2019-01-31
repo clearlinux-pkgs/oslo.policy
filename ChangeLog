@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+2.1.0
+-----
+
+* Add ability for policy-checker to read configuration
+
 2.0.0
 -----
 
@@ -17,6 +22,7 @@ CHANGES
 
 * Use template for lower-constraints
 * Use oslo.config instead of argparse
+* Add policy-upgrade tool
 
 1.43.1
 ------
