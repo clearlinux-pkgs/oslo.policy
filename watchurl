@@ -1,3 +1,0 @@
-# openstack Liberty needs version >= 0.5.0
-# for more information check https://github.com/openstack/requirements/blob/master/global-requirements.txt
-watchurl=http://tarballs.openstack.org/oslo.policy/oslo.policy-([\d.]*).tar.gz.*
