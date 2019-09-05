@@ -5,11 +5,11 @@
 # Source0 file verified with key 0xFC43F0EE211DFED8 (infra-root@openstack.org)
 #
 Name     : oslo.policy
-Version  : 2.3.0
-Release  : 59
-URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.3.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.3.0.tar.gz
-Source1 : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.3.0.tar.gz.asc
+Version  : 2.3.1
+Release  : 60
+URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.3.1.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.3.1.tar.gz
+Source1 : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.3.1.tar.gz.asc
 Summary  : Oslo Policy library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -79,14 +79,14 @@ python3 components for the oslo.policy package.
 
 
 %prep
-%setup -q -n oslo.policy-2.3.0
+%setup -q -n oslo.policy-2.3.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1565962857
+export SOURCE_DATE_EPOCH=1567648035
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "

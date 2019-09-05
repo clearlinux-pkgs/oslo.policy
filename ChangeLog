@@ -1,10 +1,16 @@
 CHANGES
 =======
 
+2.3.1
+-----
+
+
 2.3.0
 -----
 
 * Add attribute to suppress deprecation warnings
+* Add unit tests on the sphinxext indent function
+* Move doc related modules to doc/requirements.txt
 * Add Python 3 Train unit tests
 * Updated from global requirements
 * Replace git.openstack.org URLs with opendev.org URLs
