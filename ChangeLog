@@ -1,6 +1,10 @@
 CHANGES
 =======
 
+2.3.2
+-----
+
+
 2.3.1
 -----
 
@@ -9,6 +13,7 @@ CHANGES
 -----
 
 * Add attribute to suppress deprecation warnings
+* Only alias when policy names change
 * Add unit tests on the sphinxext indent function
 * Move doc related modules to doc/requirements.txt
 * Add Python 3 Train unit tests
