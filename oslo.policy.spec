@@ -6,7 +6,7 @@
 #
 Name     : oslo.policy
 Version  : 2.4.0
-Release  : 63
+Release  : 64
 URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.4.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.4.0.tar.gz
 Source1 : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.4.0.tar.gz.asc
