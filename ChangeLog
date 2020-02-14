@@ -1,6 +1,18 @@
 CHANGES
 =======
 
+3.0.0
+-----
+
+* remove outdated header
+* [ussuri][goal] Drop python 2.7 support and testing
+* Link to the Keystone role documentation
+* Make HTTP check doc heading more specific
+* Initialize global config object in cli tools
+* Move away from python setup.py test who is deprecated in pbr
+* tox: Trivial cleanup
+* Follow the new PTI for document build
+
 2.4.1
 -----
 

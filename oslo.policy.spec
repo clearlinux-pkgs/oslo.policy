@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : oslo.policy
-Version  : 2.4.1
-Release  : 66
-URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.4.1.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.4.1.tar.gz
-Source1  : http://tarballs.openstack.org/oslo.policy/oslo.policy-2.4.1.tar.gz.asc
+Version  : 3.0.0
+Release  : 67
+URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz
+Source1  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz.asc
 Summary  : Oslo Policy library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -79,15 +79,15 @@ python3 components for the oslo.policy package.
 
 
 %prep
-%setup -q -n oslo.policy-2.4.1
-cd %{_builddir}/oslo.policy-2.4.1
+%setup -q -n oslo.policy-3.0.0
+cd %{_builddir}/oslo.policy-3.0.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1576569552
+export SOURCE_DATE_EPOCH=1581646282
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -101,7 +101,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.policy
-cp %{_builddir}/oslo.policy-2.4.1/LICENSE %{buildroot}/usr/share/package-licenses/oslo.policy/294b43b2cec9919063be1a3b49e8722648424779
+cp %{_builddir}/oslo.policy-3.0.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.policy/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
