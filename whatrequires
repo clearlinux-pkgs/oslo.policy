@@ -2,6 +2,7 @@
 barbican
 cinder
 glance
+heat
 horizon
 ironic
 keystone

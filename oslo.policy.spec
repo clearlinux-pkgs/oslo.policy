@@ -6,7 +6,7 @@
 #
 Name     : oslo.policy
 Version  : 3.0.0
-Release  : 67
+Release  : 68
 URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz.asc
@@ -40,8 +40,29 @@ BuildRequires : stevedore
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/oslo.policy.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+=============
+ oslo.policy
+=============
+
+.. image:: https://img.shields.io/pypi/v/oslo.policy.svg
+    :target: https://pypi.org/project/oslo.policy/
+    :alt: Latest Version
+
+The Oslo Policy library provides support for RBAC policy enforcement across
+all OpenStack services.
+
+* Free software: Apache license
+* Documentation: https://docs.openstack.org/oslo.policy/latest/
+* Source: https://opendev.org/openstack/oslo.policy
+* Bugs: https://bugs.launchpad.net/oslo.policy
+* Blueprints: https://blueprints.launchpad.net/oslo.policy
+* Release Notes: https://docs.openstack.org/releasenotes/oslo.policy
 
 %package bin
 Summary: bin components for the oslo.policy package.
@@ -73,6 +94,7 @@ python components for the oslo.policy package.
 Summary: python3 components for the oslo.policy package.
 Group: Default
 Requires: python3-core
+Provides: pypi(oslo.policy)
 
 %description python3
 python3 components for the oslo.policy package.
@@ -87,7 +109,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581646282
+export SOURCE_DATE_EPOCH=1583194457
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
