@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : oslo.policy
-Version  : 3.0.0
-Release  : 68
-URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz
-Source1  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.0.tar.gz.asc
+Version  : 3.0.1
+Release  : 69
+URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.1.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.1.tar.gz
+Source1  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.1.tar.gz.asc
 Summary  : Oslo Policy library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -40,29 +40,8 @@ BuildRequires : stevedore
 ========================
 Team and repository tags
 ========================
-
 .. image:: https://governance.openstack.org/tc/badges/oslo.policy.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-=============
- oslo.policy
-=============
-
-.. image:: https://img.shields.io/pypi/v/oslo.policy.svg
-    :target: https://pypi.org/project/oslo.policy/
-    :alt: Latest Version
-
-The Oslo Policy library provides support for RBAC policy enforcement across
-all OpenStack services.
-
-* Free software: Apache license
-* Documentation: https://docs.openstack.org/oslo.policy/latest/
-* Source: https://opendev.org/openstack/oslo.policy
-* Bugs: https://bugs.launchpad.net/oslo.policy
-* Blueprints: https://blueprints.launchpad.net/oslo.policy
-* Release Notes: https://docs.openstack.org/releasenotes/oslo.policy
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package bin
 Summary: bin components for the oslo.policy package.
@@ -95,21 +74,29 @@ Summary: python3 components for the oslo.policy package.
 Group: Default
 Requires: python3-core
 Provides: pypi(oslo.policy)
+Requires: pypi(oslo.config)
+Requires: pypi(oslo.context)
+Requires: pypi(oslo.i18n)
+Requires: pypi(oslo.serialization)
+Requires: pypi(pyyaml)
+Requires: pypi(requests)
+Requires: pypi(six)
+Requires: pypi(stevedore)
 
 %description python3
 python3 components for the oslo.policy package.
 
 
 %prep
-%setup -q -n oslo.policy-3.0.0
-cd %{_builddir}/oslo.policy-3.0.0
+%setup -q -n oslo.policy-3.0.1
+cd %{_builddir}/oslo.policy-3.0.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583194457
+export SOURCE_DATE_EPOCH=1584633716
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -123,7 +110,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.policy
-cp %{_builddir}/oslo.policy-3.0.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.policy/294b43b2cec9919063be1a3b49e8722648424779
+cp %{_builddir}/oslo.policy-3.0.1/LICENSE %{buildroot}/usr/share/package-licenses/oslo.policy/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

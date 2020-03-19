@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+3.0.1
+-----
+
+* Temporarily make namespace arg optional
+
 3.0.0
 -----
 
