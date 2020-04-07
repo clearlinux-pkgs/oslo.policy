@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.0.3
+-----
+
+* Use unittest.mock instead of third party mock
+* Update hacking for Python3
+
 3.0.2
 -----
 
