@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+3.1.0
+-----
+
+* Fix doc comments for new enforce default flag
+* Allow disabling the default check\_str change warnings
+* Add new config to enforce the new defaults
+* Cleanup warnings
+* Bump oslo.utils to 3.40.0
+
 3.0.3
 -----
 

@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : oslo.policy
-Version  : 3.0.3
-Release  : 71
-URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.3.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.3.tar.gz
-Source1  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.0.3.tar.gz.asc
+Version  : 3.1.0
+Release  : 72
+URL      : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.1.0.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.1.0.tar.gz
+Source1  : http://tarballs.openstack.org/oslo.policy/oslo.policy-3.1.0.tar.gz.asc
 Summary  : Oslo Policy library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -22,6 +22,7 @@ Requires: oslo.config
 Requires: oslo.context
 Requires: oslo.i18n
 Requires: oslo.serialization
+Requires: oslo.utils
 Requires: requests
 Requires: six
 Requires: stevedore
@@ -31,6 +32,7 @@ BuildRequires : oslo.config
 BuildRequires : oslo.context
 BuildRequires : oslo.i18n
 BuildRequires : oslo.serialization
+BuildRequires : oslo.utils
 BuildRequires : pbr
 BuildRequires : requests
 BuildRequires : six
@@ -74,29 +76,30 @@ Summary: python3 components for the oslo.policy package.
 Group: Default
 Requires: python3-core
 Provides: pypi(oslo.policy)
-Requires: pypi(pyyaml)
-Requires: pypi(stevedore)
-Requires: pypi(oslo.context)
-Requires: pypi(oslo.serialization)
-Requires: pypi(requests)
-Requires: pypi(oslo.config)
 Requires: pypi(six)
+Requires: pypi(requests)
+Requires: pypi(oslo.utils)
+Requires: pypi(oslo.context)
+Requires: pypi(oslo.config)
+Requires: pypi(stevedore)
 Requires: pypi(oslo.i18n)
+Requires: pypi(oslo.serialization)
+Requires: pypi(pyyaml)
 
 %description python3
 python3 components for the oslo.policy package.
 
 
 %prep
-%setup -q -n oslo.policy-3.0.3
-cd %{_builddir}/oslo.policy-3.0.3
+%setup -q -n oslo.policy-3.1.0
+cd %{_builddir}/oslo.policy-3.1.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1586273173
+export SOURCE_DATE_EPOCH=1587058447
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -110,7 +113,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.policy
-cp %{_builddir}/oslo.policy-3.0.3/LICENSE %{buildroot}/usr/share/package-licenses/oslo.policy/294b43b2cec9919063be1a3b49e8722648424779
+cp %{_builddir}/oslo.policy-3.1.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.policy/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
