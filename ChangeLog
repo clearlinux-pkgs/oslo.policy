@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+3.2.0
+-----
+
+* Switch to newer openstackdocstheme and reno versions
+* Remove the unused coding style modules
+* Remove translation sections from setup.cfg
+* docs: Add description of 'oslopolicy-policy-generator'
+* Bump default tox env from py37 to py38
+* Add py38 package metadata
+* Add release notes links to doc index
+* Add Python3 victoria unit tests
+* Update master for stable/ussuri
+* Mark sphinx extensions thread safe
+
 3.1.0
 -----
 
@@ -8,6 +22,7 @@ CHANGES
 * Allow disabling the default check\_str change warnings
 * Add new config to enforce the new defaults
 * Cleanup warnings
+* Remove the conversion according to the comment of jdennis
 * Bump oslo.utils to 3.40.0
 
 3.0.3
