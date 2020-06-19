@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.2.1
+-----
+
+* Reload files in policy\_dirs on primary file change
+* Fix pygments style
+
 3.2.0
 -----
 
