@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.3.0
+-----
+
+* docs: Add separate man page for each CLI tool
+* Add oslopolicy-validator tool
+
 3.2.1
 -----
 
@@ -13,6 +19,7 @@ CHANGES
 * Switch to newer openstackdocstheme and reno versions
 * Remove the unused coding style modules
 * Remove translation sections from setup.cfg
+* Align contributing doc with oslo's policy
 * docs: Add description of 'oslopolicy-policy-generator'
 * Bump default tox env from py37 to py38
 * Add py38 package metadata
