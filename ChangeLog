@@ -1,10 +1,19 @@
 CHANGES
 =======
 
+3.4.0
+-----
+
+* Log warning for redundant file rules
+* Deprecate the JSON support for policy\_file
+* Add oslopolicy-convert-json-to-yaml tool
+* Bump bandit version
+
 3.3.2
 -----
 
 * Fix unit tests to work with stevedore > 2.0.1
+* Clarify what exactly an "access file" is
 
 3.3.1
 -----
