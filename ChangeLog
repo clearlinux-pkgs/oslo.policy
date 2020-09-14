@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+3.5.0
+-----
+
+* [goal] Migrate testing to ubuntu focal
+* sample-generator: Improve YAML output
+
 3.4.0
 -----
 
